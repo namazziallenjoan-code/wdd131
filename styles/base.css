@@ -9,6 +9,9 @@ body {
   color: #263238;
   background-color: #f1f5f8;
 }
+h1,h2,h3{
+  font-family: "Lora", serif;
+}
 header {
   background-color:  #123b52;
   color: white;

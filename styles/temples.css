@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  line-height: 1.5;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Header */
+header {
+  background-color: #3b0865;
+  color: white;
+  padding: 12px 20px;
+}
+
+/* Header container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Main heading */
+header h1 {
+  font-size: 1.5rem;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #e6c9ff;
+}
+
+/* Main content */
+main {
+  padding: 20px 0;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+/* Temple gallery */
+.temple-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Temple figures */
+figure {
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Temple images */
+figure img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Image captions */
+figcaption {
+  color: #3b0865;
+  font-size: 0.8rem;
+  padding: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #3b0865;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 0.8rem;
+}
+
+footer p:last-child {
+  font-size: 0.7rem;
+}
+
+/* Tablet screens */
+@media screen and (max-width: 768px) {
+    .temple-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-container {
+      flex-direction: column;
+      gap: 12px;
+    }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 480px) {
+    nav ul {
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      font-size: 0.9rem;
+    }
+
+    .temple-container {
+      grid-template-columns: 1fr;
+      max-width: 350px;
+    }
+
+    figure img {
+      height: 200px;
+    }
+}

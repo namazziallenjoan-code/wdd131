@@ -28,7 +28,7 @@ header {
 }
 header h1 {
   margin: 0;
-  font-family: lora, serif;
+  font-family: Lora, serif;
   font-size: 2rem;
 }
 /* Main Content */
@@ -37,7 +37,7 @@ main {
   position: relative;
 }
 /* Hero Image */
-.hero,
+.hero,  
 .hero picture {
   display: block;
   width: 100%;
@@ -61,7 +61,7 @@ section h2 {
   text-align: center;
   padding: 0.75rem;
   margin-top: 0;
-  font-family: lora, serif;
+  font-family: Lora, serif;
 }
 .data-content,
 .weather-content {
@@ -106,7 +106,7 @@ footer p {
       position: absolute;
       width: 300px;
       margin: 0;
-      background-color: 225, 225, 225, 0.95;
+      background-color: rgba(225, 225, 225, 0.95);
     }
     .data {
       top: 30px;

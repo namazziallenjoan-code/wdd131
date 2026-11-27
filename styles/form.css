@@ -1,0 +1,158 @@
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f5;
+    color: #292333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #3b0865;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* Main content */
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Form */
+form {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+form > label,
+fieldset legend {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+label span,
+legend span {
+    color: #b00020;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #9b70c5;
+    outline-offset: 2px;
+}
+
+/* Fieldsets */
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+fieldset legend {
+    padding: 0 0.4rem;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #593080;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.rating input {
+    width: auto;
+    margin: 0.3rem;
+}
+
+/* Checkboxes */
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+fieldset label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #3b0865;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #56218a;
+}
+
+/* Footer */
+footer {
+    background-color: #3b0865;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Desktop layout */
+@media screen and (min-width: 600px) {
+    main {
+        max-width: 650px;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
